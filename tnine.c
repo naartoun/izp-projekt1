@@ -42,7 +42,7 @@ int load_stdin(struct contact_t database[]) {
             line_count++;
         }
     }
-    printf("Line count: %d\n", line_count);
+
     return arg_index;   //Returns contact count.
 }
 
@@ -105,7 +105,7 @@ int main(int argc, char *argv[]) {
     //Setting variables.
     struct contact_t all_contacts[MAX_CONTACTS];
     int contact_count = load_stdin(all_contacts);
-    printf("Contact count: %d\n", contact_count);
+ 
     if (contact_count == 1000) {
         printf("Invalid data, error code 1000\n");
     }
